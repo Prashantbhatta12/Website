@@ -1,0 +1,73 @@
+:root {
+    --nepal-blue: #003893;
+    --nepal-red: #DC143C;
+    --marigold: #FF9933;
+    --bg-pattern: #fdfbf7;
+    --text-dark: #2d3436;
+    --white: #ffffff;
+    --shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    background: var(--bg-pattern);
+    color: var(--text-dark);
+}
+
+/* Dhaka Border */
+.dhaka-border {
+    height: 12px;
+    background: repeating-linear-gradient(
+        45deg,
+        var(--nepal-red) 0 10px,
+        var(--nepal-blue) 10px 20px,
+        #009a22 20px 30px,
+        var(--marigold) 30px 40px
+    );
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+/* Navigation */
+nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+    border-bottom: 2px solid var(--marigold);
+}
+
+/* Hero */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,56,147,.7), rgba(0,56,147,.5)),
+        url('https://images.unsplash.com/photo-1596450523214-5390c2921df0');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Sections */
+.section-padding {
+    padding: 4rem 5%;
+}
+
+/* Contact */
+.contact-section {
+    background: #222;
+    color: white;
+    display: flex;
+}

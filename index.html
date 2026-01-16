@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shital Dairy - Dhangadhi</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;500;700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dhaka-border"></div>
+
+    <nav>
+        <div class="logo">
+            <span class="cow">🐄</span>
+            <span data-key="logo_text">Shital Dairy</span>
+        </div>
+        <div class="nav-actions">
+            <button class="lang-btn" onclick="toggleLanguage()">
+                <i class="fas fa-language"></i> <span id="lang-label">NEP</span>
+            </button>
+            <a href="tel:9769015220" class="call-btn">
+                <i class="fas fa-phone"></i> <span data-key="call_now">Call Now</span>
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="namaste" data-key="namaste">🙏 NAMASTE 🙏</span>
+            <h1 data-key="hero_title">Purity & Taste <br>In Every Drop</h1>
+            <p data-key="hero_desc">Best quality Milk, Sweets, and Bakery items in Dhangadhi.</p>
+            <a href="#contact" class="hero-btn" data-key="order_btn">Order Now</a>
+        </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section class="section-padding">
+        <h2 class="section-title" data-key="services_title">Our Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">💍</div>
+                <h3 data-key="wedding_title">Wedding & Ceremony</h3>
+                <p data-key="wedding_desc"></p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🥛</div>
+                <h3 data-key="fresh_title">Always Fresh</h3>
+                <p data-key="fresh_desc"></p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💰</div>
+                <h3 data-key="price_title">Best Price</h3>
+                <p data-key="price_desc"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section-padding products-section">
+        <h2 class="section-title" data-key="products_title">Our Special Items</h2>
+
+        <div class="filter-nav">
+            <button class="filter-btn active" onclick="filterSelection('all')" data-key="btn_all">All</button>
+            <button class="filter-btn" onclick="filterSelection('milk')" data-key="btn_dairy">Dairy</button>
+            <button class="filter-btn" onclick="filterSelection('sweets')" data-key="btn_sweets">Sweets</button>
+            <button class="filter-btn" onclick="filterSelection('bakery')" data-key="btn_bakery">Bakery</button>
+            <button class="filter-btn" onclick="filterSelection('cake')" data-key="btn_cake">Cakes</button>
+        </div>
+
+        <div class="products-grid">
+            <!-- Product cards unchanged -->
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+        <div class="contact-info">
+            <h2 data-key="contact_title">Contact Us</h2>
+
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-key="addr_val"></span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>9769015220</span>
+            </div>
+
+            <p data-key="footer_note"></p>
+        </div>
+
+        <iframe class="map-frame" src="https://www.google.com/maps/embed?..."></iframe>
+    </section>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
